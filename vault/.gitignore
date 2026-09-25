@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Generated gRPC code (can be regenerated from .proto)
+storage_node/vault_storage_pb2.py
+storage_node/vault_storage_pb2_grpc.py
+
+# Data directory (created at runtime)
+data/
+
+# Test artifacts
+*.log
+*.pid
+
+# Metadata database (created at runtime)
+control_plane_metadata.db
