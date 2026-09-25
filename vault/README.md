@@ -105,6 +105,21 @@ GET /objects/{id}   → single object metadata + replicas, or 404
 - This is expected behavior for even-numbered clusters
 - Adding 3rd control-plane node resolves this (Step 16c/16d)
 
+## Quick start for frontend integration
+
+Run all backend components in one step:
+
+```bash
+python run_dev.py
+```
+
+The admin API will be available at `http://127.0.0.1:8000`.  
+Open the interactive docs at `http://127.0.0.1:8000/docs` (Swagger UI) or fetch the schema at `http://127.0.0.1:8000/openapi.json`.
+
+CORS is enabled for all origins (`Access-Control-Allow-Origin: *`) so the API can be called from a browser on any origin during local development.
+
+---
+
 ## Next Steps
 
 - Background repair scheduler / daemon loop (now has repair logic to invoke)
